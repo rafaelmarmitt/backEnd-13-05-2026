@@ -29,3 +29,8 @@ app.use(express.static(path.join(__dirname, '../frotend')))
 app.use((req, res) => {
     res.sendFile(path.join(__dirname, '../frotend/index.html'))
 })
+
+// Iniciar o servidor
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT} || http://localhost:${PORT}`)
+})
