@@ -46,9 +46,9 @@ exports.editar = async (req, res) => {
     try {
         if (senha) {
             const hash = await bcrypt.hash(senha, 10);
-            await db.execute('INSERT INTO usuarios nome =?, cpf =?, email =?, telefone =?, perfil =?, senha =? WHERE id_usuario=?', [nome, cpf, email, telefone, perfil, hash]);
+            await db.execute('UPDATE usuarios SET nome =?, cpf =?, email =?, telefone =?, perfil =?, senha =? WHERE id_usuario=?', [nome, cpf, email, telefone, perfil, hash]);
         } else {
-            await db.execute('INSERT INTO usuarios nome =?, cpf =?, email =?, telefone =?, perfil =? WHERE id_usuario=?', [nome, cpf, email, telefone, perfil]);
+            await db.execute('UPDATE usuarios SET nome =?, cpf =?, email =?, telefone =?, perfil =? WHERE id_usuario=?', [nome, cpf, email, telefone, perfil]);
         }
         return res.status(201).json({ mensagem: 'Usuário alterado com sucesso!' })
     } catch (error) {
@@ -57,6 +57,20 @@ exports.editar = async (req, res) => {
         }
         console.error('Erro ao editar usuário: ', error);
         return res.status(500).json({ erro: 'Erro no servidor ao editar usuário' })
+    }
+}
+
+// Trocar rápido de perfil
+exports.alterarPerfil = async (req, res) => {
+    const { perfil } = req.body;
+    const { id } = req.params;
+
+    try {
+        await db.execute('UPDATE usuarios SET perfil =? WHERE id_usuario=?', [perfil]);
+        return res.status(201).json({ mensagem: 'Perfil do usuário alterado com sucesso!!' })
+    } catch (error) {
+        console.error('Erro ao atualizar perfil do usuário: ', error);
+        return res.status(500).json({ erro: 'Erro no servidor ao atualizar perfil do usuário' })
     }
 }
 
