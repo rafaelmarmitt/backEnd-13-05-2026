@@ -1,4 +1,6 @@
-# BACK-END SENAC WEDDING
+# SENAC WEDDING
+
+## BACK-END
 
 ### Projeto Desenvolvido:
 
@@ -257,3 +259,27 @@ cd backend
  ```
 
  Após isso o seu servidor estará rodando na porta: 3000, no link: http://localhost:3000
+
+ ## FRONT-END
+
+ ### Projeto Desenvolvido:
+
+#### Estrutura das pastas:
+![Estrutura das pastas](/img/pastasFront.png)
+
+#### Telas:
+
+Tela do Dashboard:
+![Tela do Dashboard1](/img/dash1.png)
+![Tela do Dashboard2](/img/dash2.png)
+
+Tela de Checkin:
+![Tela de Checkin](/img/checkin.png)
+
+Tela do Desafio Surpresa:
+![Tela Desafio Surpresa](/img/desafio.png)
+
+> [!WARNING]
+>   ##### Desafios Encontrados:
+> 
+>   Não achei nenhuma parte do projeto difícil, pena que não consegui decorar todo ele devido a grande quantidade de código e a complexidade do front, mas mesmo assim estou satisfeito com o meu processo nesse período da competição. Acho que valeu a pena todo o tempo investido pela evolução que eu tive.
