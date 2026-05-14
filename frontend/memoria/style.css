@@ -1,0 +1,14 @@
+.col {
+    height: 300px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.container {
+    position: absolute;
+}
