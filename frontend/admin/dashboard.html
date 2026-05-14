@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SenacWedding</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+            <a class="nav-link" href="../recepcao/checkin.html">Checkin</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="cpi-card d-flex justify-content-center row">
+      <div class="card text-bg-primary my-3 mx-4 col" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: xx-large; font-weight: 600;">Presentes:</h5>
+          <p class="card-text" style="font-size: xx-large; font-weight: 600; text-align: center;">0</p>
+        </div>
+      </div>
+      <div class="card text-bg-success my-3 mx-4 col" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: xx-large; font-weight: 600;">Ausentes:</h5>
+          <p class="card-text" style="font-size: xx-large; font-weight: 600; text-align: center;">0</p>
+        </div>
+      </div>
+      <div class="card text-bg-warning my-3 mx-4 col" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: xx-large; font-weight: 600;">Confirmados:</h5>
+          <p class="card-text" style="font-size: xx-large; font-weight: 600; text-align: center;">6</p>
+        </div>
+      </div>
+      <div class="card text-bg-info my-3 mx-4 col" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: xx-large; font-weight: 600;">Taxa de Presença:</h5>
+          <p class="card-text" style="font-size: xx-large; font-weight: 600; text-align: center;"> -%</p>
+        </div>
+      </div>
+    </div>
+    <div class="gafic-container">
+      <h2 style="text-align: center; margin-top: 50px;">Gráfico de Presentes / Ausentes</h2>
+      <img src="../img/doughnut.png" class=" rounded mx-auto d-block" alt="Gráfico Rosquinha">
+    </div>
+
+    <hr style="height: 5px; border-color: black;">
+
+    <div class="table-div">
+      <h2 style="text-align: left; margin-left: 260px;">Lista de Convidados:</h2>
+      <button type="button" class="btn btn-info" style="margin-left: 1350px;"
+        onclick="alert('Deseja Adicionar um novo convidado?')">+ Adicionar</button>
+      <table class="table table-dark" style="width: 1200px; margin-left: auto;margin-right: auto; margin-top: 25px;">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>João</td>
+            <td>Garcia</td>
+            <td>jgarcia@gmail.com</td>
+            <td>(51) 999235493</td>
+            <td>[Editar] [Excluir]</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>João</td>
+            <td>Garcia</td>
+            <td>jgarcia@gmail.com</td>
+            <td>(51) 999237463</td>
+            <td> [Editar] [Excluir]</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>João</td>
+            <td>Garcia</td>
+            <td>jgarcia@gmail.com</td>
+            <td>(51) 999237498</td>
+            <td>[Editar] [Excluir]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-div">
+      <h2 style="text-align: left; margin-left: 260px; margin-top: 50px;">Lista de Usuários:</h2>
+      <button type="button" class="btn btn-info" style="margin-left: 1350px;"
+        onclick="alert('Deseja Adicionar um novo convidado?')">+ Adicionar</button>
+      <table class="table table-dark" style="width: 1200px; margin-left: auto;margin-right: auto; margin-top: 25px;">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Admin</td>
+            <td>admin@gmail.com</td>
+            <td>(51) 999237495</td>
+            <td>[Editar] [Excluir]</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Cerimonialista</td>
+            <td>cerimonialista@gmail.com</td>
+            <td>(51) 999237406</td>
+            <td> [Editar] [Excluir]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
